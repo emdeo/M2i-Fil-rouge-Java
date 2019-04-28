@@ -1,9 +1,12 @@
 <!-- Plan de présentation M2i "Java : langage et écosystème" -->
 
 <!-- Pour en savoir plus sur le chargement de page web
-à partir d'un XML, consulter la doc relative au HttpRequest -->
+à partir d'un XML, consulter doc relative au HttpRequest et XSLT -->
 
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Lien vers fichier XSL -->
+<?xml-stylesheet type="text/xsl" href="presentationJava.xsl" ?>
 
 <presentation>
 
