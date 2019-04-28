@@ -1,8 +1,8 @@
 <!-- Prologue (identique à XML) -->
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xsl version="1.0" encoding="UTF-8" ?>
 
 <!-- Un document XSLT doit être référencé dans le document XML qu'il transforme -->
-<?xml-stylesheet type="text/xsl" href= "mon_document.xsl" ?>
+<?xsl-stylesheet type="text/xsl" href= "mon_document.xsl" ?>
 
 <!-- Corps (élément racine : déclarer 2 attributs qui sont le n° de version et l'espace de noms) -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -25,7 +25,7 @@
                     <p>Contenu du deuxième axe du plan :</p>
 
                     <!-- VALUE-OF : sélectionner un élément de mon fichier XML pour l'afficher dans un HTML -->
-                    <xsl:value-of select="m2i-Plan-java/axe[nom='fonctions']">
+                    <xsl:value-of select="m2i-Plan-java/axe[nom='fonctions']" />
                 </body>
             </html>
         </xsl:template>
