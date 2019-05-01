@@ -4,7 +4,7 @@ Projet fil rouge M2i : présentation sur le thème "Java : Langage et écosystè
 
 ## Table des matières
 
-1. [References](#references)
+1. [Références](#references)
 2. [XML](#xml)
 3. [XLS](#xls)
 
