@@ -1,4 +1,4 @@
-# Java : Langage et écosystème (projet fil rouge M2i)
+# Java : Langage et écosystème
 
 Projet fil rouge M2i : présentation sur le thème "Java : Langage et écosystème". Concevoir le plan avec un fichier XML (permet de créer des docs au format différents ayant le même contenu).
 
@@ -11,6 +11,8 @@ Projet fil rouge M2i : présentation sur le thème "Java : Langage et écosystè
 ## <a herf="references">Références</a>
 
 Intro à XSLT sur <a href="https://openclassrooms.com/fr/courses/1766341-structurez-vos-donnees-avec-xml/1769236-introduction-a-xslt">OpenClassrooms</a>.
+
+Utiliser Bootstrap pour mettre en forme du XML : <a href="https://github.com/acch/XML-to-bootstrap">dossier GitHub</a> (le mec a mis en place une démo <a href="https://acch.github.io/XML-to-bootstrap/">ici</a>).
 
 ## <a href="xml">XML</a>
 
