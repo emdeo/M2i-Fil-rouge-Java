@@ -1,4 +1,4 @@
-# README
+# PRESENTATION "JAVA : LANGAGE ET ECOSYSTEME"
 
 Projet fil rouge M2i : présentation sur le thème "Java : Langage et écosystème". Concevoir le plan avec un fichier XML (permet de créer des docs au format différents ayant le même contenu).
 
