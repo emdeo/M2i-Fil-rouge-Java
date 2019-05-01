@@ -6,7 +6,7 @@
 <!-- <?xml version="1.0" encoding="UTF-8"?> -->
 
 <!-- Lien vers fichier XSL utilisé pour la mise en forme -->
-<!-- SANS CETT LIGNE, LE FICHIER XML VA S'AFFICHER EN BRUT DANS LA PAGE WEB -->
+<!-- SANS CETTE LIGNE, LE FICHIER XML VA S'AFFICHER EN BRUT DANS LA PAGE WEB -->
 <?xml-stylesheet type="text/xsl" href="./presentationJava.xsl" ?>
 
 <presentation>
