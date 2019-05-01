@@ -1,4 +1,4 @@
-<!-- Prologue (identique à XML) -->
+<!-- Prologue (analogue à un fichier XML) -->
 <?xsl version="1.0" encoding="UTF-8" ?>
 
 <!-- Un document XSLT doit être référencé dans le document XML qu'il transforme -->

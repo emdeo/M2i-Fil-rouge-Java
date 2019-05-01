@@ -1,0 +1,13 @@
+<Liste_Des_Contacts> <!-- Elément racine. Aucune autre balise ne peut être au même niveau que celle-ci. PS : Attention à la casse ! -->
+
+    <Contact Nom="Prost" Prenom="Alain" Age="62"> <!-- Un élément qui ne se répète pas -> attribut ou enfant (ex. Nom). Un élément qui se répète -> il vaut mieux le mettre en tant qu'enfant (ici email) -->
+        <Email>a.prost@free.fr</Email>
+        <Email>a.prost@orange.fr</Email>
+        <Tel>0607080900</Tel>
+    </Contact>
+
+    <Contact Nom="Schumacher" Prenom="Michael" Age="51"> <!-- On peut ne pas avoir la même structure pour tous les éléments -->
+        <Email>m.schum@deutsch.de</Email>
+    </Contact>
+
+</Liste_Des_Contacts>

@@ -6,7 +6,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Lien vers fichier XSL -->
-<?xml-stylesheet type="text/xsl" href="presentationJava.xsl" ?>
+<!-- <?xml-stylesheet type="text/xsl" href="presentationJava.xsl" ?> -->
 
 <presentation>
 
@@ -98,7 +98,7 @@
         </axe>
         <axe nom="tableaux" niveau="3">
             <contenu>
-                listes "[]", dictionnaires "{}" et collections "ArrayList"
+                listes ("[]"), dictionnaires ("{}") et collections ("ArrayList", "List"...)
             </contenu>
         </axe>
         <axe nom="operateurs" niveau="3">
