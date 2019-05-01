@@ -4,11 +4,11 @@ Projet fil rouge M2i : présentation sur le thème "Java : Langage et écosystè
 
 ## Table des matières
 
-1. [Références](#references)
+1. [Références](#références)
 2. [XML](#xml)
 3. [XLS](#xls)
 
-## <a herf="references">Références</a>
+## <a herf="références">Références</a>
 
 Intro à XSLT sur <a href="https://openclassrooms.com/fr/courses/1766341-structurez-vos-donnees-avec-xml/1769236-introduction-a-xslt">OpenClassrooms</a>.
 
