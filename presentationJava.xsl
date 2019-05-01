@@ -1,9 +1,6 @@
 <!-- Prologue (analogue à un fichier XML) -->
 <?xsl version="1.0" encoding="UTF-8" ?>
 
-<!-- Un document XSLT doit être référencé dans le document XML qu'il transforme -->
-<!-- <?xsl-stylesheet type="text/xsl" href= "m2i-Plan-java.xml"?> -->
-
 <!-- Corps (élément racine : déclarer 2 attributs qui sont le n° de version et l'espace de noms) -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
