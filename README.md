@@ -6,7 +6,7 @@ Projet fil rouge M2i : présentation sur le thème "Java : Langage et écosystè
 
 1. [Références](#références)
 2. [XML](#xml)
-3. [XLS](#xls)
+3. [XSL](#xsl)
 
 ## <a herf="références">Références</a>
 
@@ -20,6 +20,6 @@ Similaire à HTML : on définit nos propres balises (noms et attributs) imbriqu�
 
 Contient un élément racine dans lequel s'embriquent toutes les autres balises.
 
-## <a href="xls">XLS</a>
+## <a href="xsl">XSL</a>
 
 Toutes les balises doivent être préfixées par **xsl**.
