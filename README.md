@@ -71,7 +71,7 @@ Following are the important benefits of EJB :
 
 Le Web a toujours été basé sur un principe simple : tous les types de contenu sont fournis par les serveurs Web et peuvent être récupérés par les clients via HTTP ou FTP. Les clients sont des **navigateurs** dont les plus connus sont Mozilla Firefox ou Google Chrome. Ceux-ci peuvent être installés et utilisés sur le système de l’utilisateur. Les serveurs Web comme Apache et NGINX sont en revanche des **composants de projets Web** ; ils sont aussi installés et exécutés dans cet environnement et permettent au client respectif d’accéder au contenu.
 
-Alors qu’un contenu **statique**, comme par exemple les éléments HTML classiques ou les images, est simplement et facilement transmis et affiché, le contenu **dynamique** lui, comme par exemple un wiki, une liste déroulante (drop-down list) ou une application Web, fonctionne uniquement à l’aide de scripts. Ils doivent être exécutés et interprétés avec un langage de script approprié, et peuvent être réalisés côté serveur ou côté client. C’est pour cette raison que l’on distingue le script côté serveur (server side scripting) du script côté client (client side scripting).
+Alors qu’un contenu **statique**, comme par exemple les éléments HTML classiques ou les images, est simplement et facilement transmis et affiché, le contenu **dynamique** lui, comme par exemple un wiki, une liste déroulante (drop-down list) ou une application Web, fonctionne uniquement à l’aide de **scripts**. Ils doivent être exécutés et interprétés avec un langage de script approprié, et peuvent être réalisés côté serveur ou côté client. C’est pour cette raison que l’on distingue le script côté serveur (server side scripting) du script côté client (client side scripting).
 
 **Le script côté serveur** est une technique utilisée pour développer des sites Internet avec des éléments dynamiques et des applications Web. Elle est basée sur l’utilisation de scripts, qui fonctionnent sur le serveur Web en utilisant les langages de scripts appropriés lorsqu’un client demande le contenu correspondant. Le rôle des scripts est souvent de collecter les données appropriées à partir d’une base de données et de les intégrer dans le projet Web. L’utilisateur accède à eux via des pages HTML, où le code source des scripts est complètement masqué. L’utilisation de scripts côté serveur requiert que le client envoie plusieurs demandes au serveur Web pour fournir à l’utilisateur de nouvelles informations. Cela signifie une forte utilisation des capacités du serveur, qui affecte le temps de réponse du serveur Web, et d’autre part qu’une connexion existante au serveur soit indispensable pour l’utilisation du site Internet.
 
@@ -89,6 +89,8 @@ Le polymorphisme veut dire que le même service, aussi appelé opération ou mé
 
 **Polymorphisme dynamique** (ou polymorphisme d'héritage) : redéfinir une méthode dans une sous-classe, on peut spécialiser le comportement d'une méthode. 
 
+
+
 ### Encapsulation
 
 Les classes, les attributs et les méthodes bénéficient de niveaux d'accessibilité, qui indiquent dans quelles circonstances on peut accéder à ces éléments :
@@ -96,3 +98,53 @@ Les classes, les attributs et les méthodes bénéficient de niveaux d'accessibi
 - par défaut (ibidem + depuis le package)
 - protected (ibidem + depuis les sous-classes)
 - public (accessible depuis TOUTES les classes)
+
+
+
+### Modificateurs d'accès
+
+La déclaration d'une classe, d'une méthode ou d'un membre peut être précédée par un modificateur d'accès. Un modificateur indique si les autres classes de l'application pourront accéder ou non à la classe/méthode/membre (qualifié par la suite d'« item ») :
+- public : toutes les classes peuvent accéder à l'item ;
+- protected : seules les classes dérivées et les classes du même package peuvent accéder à l'item ;
+- private : l'item est seulement accessible depuis l'intérieur de la classe où il est défini ;
+- par défaut : sans modificateur d'accès, seules les classes du même package peuvent accéder à l'item.
+
+L'utilisation des modificateurs permet au programmeur de contrôler la visibilité des différents items et permet d'empêcher que des actions illégales soient effectuées sur les items.
+
+**abstract** : le modificateur abstract indique qu'une classe ou méthode est abstraite.
+
+**final** : ajouté devant un attribut, il le rend immuable, dès lors qu'il est initialisé (autrement dit, il n'est pas obligatoire de l'initialiser dès la déclaration, contrairement à d'autres langages). Pour les types primitifs, final fige la valeur, pour les objets, final fige la référence, et non la valeur de la référence (i.e. seule l'instanciation est figée).
+
+Devant une variable locale (c.-à-d. dans une méthode), il a le même comportement que pour un attribut. Devant une méthode, il indique que cette méthode ne peut pas être modifiée dans une classe dérivée. Les méthodes static et private sont implicitement final. Devant une classe, il indique que cette classe ne peut pas avoir de sous-classe.
+
+**static** : le modificateur static indique, pour une méthode, qu'elle peut être appelée sans instancier sa classe (syntaxe : Classe.methode()). Pour un attribut, qu'il s'agit d'un attribut de classe, et que sa valeur est donc partagée entre les différentes instances de sa classe. De plus, il est possible de déclarer dans une classe un bloc d'initialisation statique, qui est un bloc d'instruction précédé du modificateur static.
+
+**synchronized** : le modificateur synchronized indique que la méthode ne peut être exécutée que par un thread à la fois. Le verrou ne s'active que pour l'objet sur lequel la méthode a été appelée (une même méthode synchronized peut être exécutée en même temps par deux threads différents sur deux objets différents).
+
+**transient** : le modificateur transient indique que lors de la sérialisation de l'objet, cet attribut n'est pas sérialisé et donc il est ignoré. Cela signifie que lorsque l'on désérialise l'objet, l'attribut portant le modificateur transient n'est pas défini dans l'objet désérialisé. Il s'agit en général d'attributs qui peuvent être recalculés à partir des autres attributs de l'objet.
+
+**native** : ce modificateur permet d'indiquer que cet item est défini dans une bibliothèque externe écrite dans un autre langage de programmation, utilisant l'API JNI.
+
+**strictfp** : pour une méthode, une classe ou une interface, le modificateur strictfp (abréviation de strict floating point) force la JVM à évaluer les opérations à virgules flottantes (sur les double et float) conformément à la spécification Java, c'est-à-dire de la gauche vers la droite. Cela permet d'avoir un comportement identique d'une JVM à une autre et d'éviter certains dépassements de valeur limite pour les résultats intermédiaires.
+
+**volatile** : pour une variable, le modificateur volatile force la JVM, avant et après chaque utilisation de la variable, à la rafraîchir à partir de la mémoire principale au lieu d'utiliser un cache local. Cela permet de synchroniser la valeur de la variable entre plusieurs threads. 
+
+
+
+### Couplage
+
+Le couplage est une métrique indiquant le niveau d'interaction entre deux ou plusieurs **composants logiciels** (*fonctions*, *modules*, *objets* ou *applications*). Deux composants sont dits couplés s'ils échangent de l'information.
+
+**Couplage faible** = les composants échangent peu d'informations (une bonne architecture logicielle nécessite le couplage le plus faible possible).
+
+**Couplage fort** =  les composants échangent beaucoup d'informations. Les composants perdent leur autonomie. On peut difficilement remplacer un composant par un autre. Les structures fonctionnant avec du couplage fort sont donc peu souples et peu ouvertes.
+
+
+
+### Persistance
+
+La gestion de la persistance des données (en anglais : persistence) et parfois des états d'un programme réfère au mécanisme responsable de la sauvegarde et de la restauration des données. **Ces mécanismes font en sorte qu'un programme puisse se terminer sans que ses données et son état d'exécution ne soient perdus**.
+
+Ces informations de reprise peuvent être enregistrées sur disque, éventuellement sur un serveur distant (un serveur de bases de données relationnelles, par exemple).
+
+Du fait de la différence de modèles entre les bases de données et les langages de programmation (notamment les langages objet) la notion de correspondance entre modèles (en anglais : mapping) est centrale.
