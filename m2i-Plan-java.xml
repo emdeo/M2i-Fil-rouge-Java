@@ -10,220 +10,283 @@
 <?xml-stylesheet type="text/xsl" href="./presentationJava.xsl" ?>
 
 <presentation>
+    <axe_L nom="Introduction" niveau="1">
 
-  <axe_L nom="introduction" niveau="1">
+        <axe_M nom="Origines" niveau="2">
+            <axe_S nom="Conception" niveau="3">
+                <contenu>
+                    Comment a été conçu Java ?
+                </contenu>
+            </axe_S>
+            <axe_S nom="Version" niveau="3">
+                <contenu>
+                    Présentation des versions successives
+                </contenu>
+            </axe_S>
+        </axe_M>
 
-    <axe_M nom="origines" niveau="2">
-        <axe_S nom="historique" niveau="3">
-            <contenu>
-                Comment a été conçu Java ?
-            </contenu>
-        </axe_S>
-        <axe_S nom="versions" niveau="3">
-            <contenu>
-                Présentation des versions successives
-            </contenu>
-        </axe_S>
-    </axe_M>
+        <axe_M nom="Fonctions" niveau="2">
+            <axe_S nom="Objet" niveau="3">
+                <contenu>
+                    Les principes de la POO
+                </contenu>
+            </axe_S>
+            <axe_S nom="Fortement_typé" niveau="3">
+                <contenu>
+                    Java est un langage fortement typé
+                </contenu>
+            </axe_S>
+            <axe_S nom="Portable" niveau="3">
+                <contenu>
+                    Java est compatible avec différentes plateformes (machine physique + OS)
+                </contenu>
+            </axe_S>
+            <axe_S nom="Applications" niveau="3">
+                <contenu>
+                    Applications web, bureau et mobile
+                </contenu>
+                <contenu>
+                    Jeux vidéos (Minecraft...)
+                </contenu>
+                <contenu>
+                    Communication avec les serveurs, connexions aux bases de données...
+                </contenu>
+            </axe_S>
+        </axe_M>
 
-    <axe_M nom="fonctions" niveau="2">
-        <axe_S nom="objet" niveau="3">
-            <contenu>
-                Les principes de la POO
-            </contenu>
-        </axe_S>
-        <axe_S nom="typage" niveau="3">
-            <contenu>
-                Java est un langage fortement typé
-            </contenu>
-        </axe_S>
-        <axe_S nom="portable" niveau="3">
-            <contenu>
-                Java est compatible avec différentes plateformes (machine physique + OS)
-            </contenu>
-        </axe_S>
-        <axe_S nom="applications" niveau="3">
-            <contenu>
-                Applications web, bureau et mobile
-            </contenu>
-            <contenu>
-                Jeux vidéos (Minecraft...)
-            </contenu>
-            <contenu>
-                Communication avec les serveurs, connexions aux bases de données...
-            </contenu>
-        </axe_S>
-    </axe_M>
+        <axe_M nom="Usages" niveau="2">
+            <axe_S nom="IDE" niveau="3">
+                <contenu>
+                    Présentation des environnements de développement (Oracle, IntelIJ...)
+                </contenu>
+            </axe_S>
+            <axe_S nom="Documentation" niveau="3">
+                <contenu>
+                    Contributions et partage de code en open-source
+                </contenu>
+            </axe_S>
+        </axe_M>
 
-    <axe_M nom="usages" niveau="2">
-        <axe_S nom="ide" niveau="3">
-            <contenu>
-                Présentation des environnements de développement (Oracle, IntelIJ...)
-            </contenu>
-        </axe_S>
-        <axe_S nom="documentation" niveau="3">
-            <contenu>
-                Contributions et partage de code en open-source
-            </contenu>
-        </axe_S>
-    </axe_M>
+        <axe_M nom="Mécanismes" niveau="2">
+            <axe_S nom="JVM" niveau="3">
+                <contenu>
+                    Qu'est-ce qu'une machine virtuelle ?
+                </contenu>
+                <contenu>
+                    Java : compilation, exécution, gestion mémoire...
+                </contenu>
+            </axe_S>
+            <axe_S nom="Avantages_et_inconvénients" niveau="3">
+                <contenu>
+                    Avantage : Java est multiplateforme
+                </contenu>
+                <contenu>
+                    Inconvénient : Java est lent
+                </contenu>
+            </axe_S>
+        </axe_M>
+    </axe_L>
 
-    <axe_M nom="mecanismes" niveau="2">
-        <axe_S nom="jvm" niveau="3">
-            <contenu>
-                Qu'est-ce qu'une machine virtuelle ?
-            </contenu>
-            <contenu>
-                Java : compilation, exécution, gestion mémoire...
-            </contenu>
-        </axe_S>
-        <axe_S nom="aspects" niveau="3">
-            <contenu>
-                Avantage : Java est multiplateforme
-            </contenu>
-            <contenu>
-                Inconvénient : Java est lent
-            </contenu>
-        </axe_S>
-    </axe_M>
+    <axe_L nom="Bases_du_langage" niveau="1">
+        
+        <axe_M nom="Types_primitifs" niveau="2">
+            <axe_S nom="Entiers" niveau="3">
+                <contenu>
+                    byte, short, int, long
+                </contenu>
+            </axe_S>
+            <axe_S nom="Flottants" niveau="3">
+                <contenu>
+                    float, double
+                </contenu>
+            </axe_S>
+            <axe_S nom="Caractères" niveau="3">
+                <contenu>
+                    char
+                </contenu>
+            </axe_S>
+            <axe_S nom="Booléens" niveau="3">
+                <contenu>
+                    boolean
+                </contenu>
+            </axe_S>
+        </axe_M>
 
-  </axe_L>
+        <axe_M nom="Opérateurs" niveau="2">
+            <axe_S nom="Types" niveau="3">
+                <contenu>
+                    Calcul, assignation, incrémentation, comparaison, logique
+                </contenu>
+            <axe_S nom="Priorité" niveau="3">
+                <contenu>
+                    <a href="./Java opérateurs_Priorités.PNG">
+                </contenu>
+            </axe_S>
+        </axe_M>
 
-  <axe_L nom="code" niveau="1">
+        <axe_M nom="Structures_de_contrôle" niveau="2">
+            <axe_S nom="Structures_itératives" niveau="3">
+                <contenu>
+                    Itérations à travers des événements particuliers : while et do-while
+                </contenu>
+                <contenu>
+                    Itérations à travers une liste : for et for-each
+                </contenu>
+            </axe_S>
+            <axe_S nom="Structures_conditionnelles" niveau="3">
+                <contenu>
+                    Gérer des événements différents : if-else
+                </contenu>
+                <contenu>
+                    Gérer les possibilités d'un même événement : switch
+                </contenu>
+            </axe_S>
+        </axe_M>
+
+        <axe_M nom="Structures_de_données" niveau="2">
+            <axe_S nom="Tableaux" niveau="3">
+                <contenu>
+                    Groupe d'éléments de même type
+                </contenu>
+            </axe_S>
+            <axe_S nom="Chaînes_de_caractères" niveau="3">
+                <contenu>
+                    String : objets immuables, concaténables, créés de manière non explicite
+                </contenu>
+            </axe_S>
+        </axe_M>
+
+    </axe_L>
+
+    <axe_L nom="Langage_de_programmation" niveau="1">
+
+        <axe_M nom="Concepts_fondamentaux">
+
+            <axe_S nom="Classes" niveau="2">
+                <!-- <axe_XS nom="librairies" niveau="3">
+                    <contenu>
+                        Packages et librairies : comment (et pourquoi) importer du code écrit par d'autres personnes
+                    </contenu>
+                </axe_XS>
+                <axe_XS nom="base" niveau="3">
+                    <contenu>
+                        Classes de base : Math, Random, JavaFX...
+                    </contenu>
+                </axe_XS>
+                <axe_XS nom="concepts" niveau="3">
+                    <contenu>
+                        Enumération, exceptions, modificateurs d'accès, constructeurs, encapsulation, héritage, polymorphisme, interfaces, classes abstraites, classes internes, transtypage, "this", instanciation, déclencheurs, threads, patrons de conception, concurrency...
+                    </contenu>
+                </axe_XS> -->
+            </axe_S>
+
+            <axe_S nom="Héritage" niveau="2">
+            </axe_S>
+            <axe_S nom="Classes_abstraites_et_interfaces" niveau="2">
+            </axe_S>
+            <axe_S nom="Structures_de_données_avancées" niveau="2">
+            </axe_S>
+            <axe_S nom="Exceptions" niveau="2">
+            </axe_S>
+
+        </axe_M>
+
+        <axe_M nom="Interfaces_graphiques">
+
+            <axe_S nom="Gestion_des_fenêtres" niveau="2">
+            </axe_S>
+            <axe_S nom="Gestion_des_boutons" niveau="2">
+            </axe_S>
+
+        </axe_M>
+    </axe_L>
     
-    <axe_M nom="donnees" niveau="2">
-        <axe_S nom="variables" niveau="3">
-            <contenu>
-                Variables et types primitifs : byte, short, int, long, float, double, char, String, boolean
-            </contenu>
-        </axe_S>
-        <axe_S nom="tableaux" niveau="3">
-            <contenu>
-                listes ("[]"), dictionnaires ("{}") et collections ("ArrayList", "List"...)
-            </contenu>
-        </axe_S>
-        <axe_S nom="operateurs" niveau="3">
-            <contenu>
-                Manipuler les informations : +, -, /, *, %, ++, and, or, supérieur à, supérieur ou égal à, égal à, différent de
-            </contenu>
-        </axe_S>
-        <axe_S nom="commentaires" niveau="3">
-            <contenu>
-                Documenter et maintenir son code : // et /**/
-            </contenu>
-        </axe_S>
-    </axe_M>
-
-    <axe_M nom="controle" niveau="2">
-        <axe_S nom="conditions" niveau="3">
-            <contenu>
-                Gérer des événements différents : if-else
-            </contenu>
-            <contenu>
-                Gérer les possibilités d'un même événement : switch
-            </contenu>
-        </axe_S>
-        <axe_S nom="boucles" niveau="3">
-            <contenu>
-                Itérations à travers une liste : for et for-each
-            </contenu>
-            <contenu>
-                Itérations à travers des événements particuliers : while et do-while
-            </contenu>
-        </axe_S>
-        <axe_S nom="exceptions" niveau="3">
-            <contenu>
-                Gérer des situations innatendues (exceptions et messages d'erreurs)
-            </contenu>
-        </axe_S>
-    </axe_M>
-
-    <axe_M nom="fonctions" niveau="2">
-        <axe_S nom="creation" niveau="3">
-            <contenu>
-                Faire nos propres fonctions : notion d'algorithme, return et paramètres
-            </contenu>
-        </axe_S>
-        <axe_S nom="predefinies" niveau="3">
-            <contenu>
-                Méthodes importées avec Java : System, String...
-            </contenu>
-        </axe_S>
-    </axe_M>
-
-    <axe_M nom="classes" niveau="2">
-        <axe_S nom="librairies" niveau="3">
-            <contenu>
-                Packages et librairies : comment (et pourquoi) importer du code écrit par d'autres personnes
-            </contenu>
-        </axe_S>
-        <axe_S nom="base" niveau="3">
-            <contenu>
-                Classes de base : Math, Random, JavaFX...
-            </contenu>
-        </axe_S>
-        <axe_S nom="concepts" niveau="3">
-            <contenu>
-                Enumération, exceptions, modificateurs d'accès, constructeurs, encapsulation, héritage, polymorphisme, interfaces, classes abstraites, classes internes, transtypage, "this", instanciation, déclencheurs, threads, patrons de conception, concurrency...
-            </contenu>
-        </axe_S>
-    </axe_M>
-
-    <axe_M nom="deploiement" niveau="2">
-        <axe_S nom="debogage" niveau="3">
-            <contenu>
-                Détecter et corriger ses erreurs
-            </contenu>
-        </axe_S>
-        <axe_S nom="archivage" niveau="3">
-            <contenu>
-                Compresser et exporter son code
-            </contenu>
-        </axe_S>
-    </axe_M>
-
-  </axe_L>
-
-  <axe_L nom="ecosysteme" niveau="1">
+    <axe_L nom="Ecosysteme" niveau="1">
     
-    <axe_M nom="frameworks" niveau="2">
-        <axe_S nom="usages" niveau="3">
-            <contenu>
-                Infrastructure de développement : encadre la conception de programmes selon un patron de conception prédéfini
-            </contenu>
-        </axe_S>
-        <axe_S nom="populaires" niveau="3">
-            <contenu>
-                Spring, Angular, JUnit, React...
-            </contenu>
-        </axe_S>
-    </axe_M>
+        <axe_M nom="Frameworks" niveau="2">
+            <axe_S nom="Usages" niveau="3">
+                <contenu>
+                    Infrastructure de développement : encadre la conception de programmes selon un patron de conception prédéfini
+                </contenu>
+            </axe_S>
+            <axe_S nom="Populaires" niveau="3">
+                <contenu>
+                    Spring, Angular, JUnit, React...
+                </contenu>
+            </axe_S>
+        </axe_M>
 
-    <axe_M nom="plugins" niveau="2">
-        <axe_S nom="usages" niveau="3">
-            <contenu>
-                Apporter de nouvelles fonctionnalités à un logiciel
-            </contenu>
-        </axe_S>
-        <axe_S nom="populaires" niveau="3">
-            <contenu>
-                Eclipse : JPF, RCP...
-            </contenu>
-        </axe_S>
-    </axe_M>
+        <!-- <axe_M nom="Plugins" niveau="2">
+            <axe_S nom="usages" niveau="3">
+                <contenu>
+                    Apporter de nouvelles fonctionnalités à un logiciel
+                </contenu>
+            </axe_S>
+            <axe_S nom="populaires" niveau="3">
+                <contenu>
+                    Eclipse : JPF, RCP...
+                </contenu>
+            </axe_S>
+        </axe_M>
 
-    <axe_M nom="api" niveau="2">
-        <axe_S nom="usages" niveau="3">
-            <contenu>
-                Gestion de services web : transactions, gestion de bases de données, contrats applicatifs (?), développement dynamique (HTML, XML...), data mining...
-            </contenu>
-        </axe_S>
-        <axe_S nom="populaires" niveau="3">
-            <contenu>
-                JDBC, JAX, Apache Tomcat...
-            </contenu>
-        </axe_S>
-    </axe_M>
+        <axe_M nom="api" niveau="2">
+            <axe_S nom="usages" niveau="3">
+                <contenu>
+                    Gestion de services web : transactions, gestion de bases de données, contrats applicatifs (?), développement dynamique (HTML, XML...), data mining...
+                </contenu>
+            </axe_S>
+            <axe_S nom="populaires" niveau="3">
+                <contenu>
+                    JDBC, JAX, Apache Tomcat...
+                </contenu>
+            </axe_S>
+        </axe_M> -->
 
-  </axe_L>
+    </axe_L>
+
+    
 </presentation> 
+
+<!-- BROUILLONS -->
+<!--
+    <axe_S nom="exceptions" niveau="3">
+        <contenu>
+            Gérer des situations innatendues (exceptions et messages d'erreurs)
+        </contenu>
+    </axe_S>
+
+<axe_M>
+    <axe_S nom="commentaires" niveau="3">
+        <contenu>
+            Documenter et maintenir son code : // et /**/
+        </contenu>
+    </axe_S>
+</axe_M>
+
+
+<axe_M nom="fonctions" niveau="2">
+    <axe_S nom="creation" niveau="3">
+        <contenu>
+            Faire nos propres fonctions : notion d'algorithme, return et paramètres
+        </contenu>
+    </axe_S>
+    <axe_S nom="predefinies" niveau="3">
+        <contenu>
+            Méthodes importées avec Java : System, String...
+        </contenu>
+    </axe_S>
+</axe_M>
+
+<axe_M nom="deploiement" niveau="2">
+    <axe_S nom="debogage" niveau="3">
+        <contenu>
+            Détecter et corriger ses erreurs
+        </contenu>
+    </axe_S>
+    <axe_S nom="archivage" niveau="3">
+        <contenu>
+            Compresser et exporter son code
+        </contenu>
+    </axe_S>
+</axe_M>
+-->
