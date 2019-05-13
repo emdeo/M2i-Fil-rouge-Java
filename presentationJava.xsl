@@ -18,7 +18,14 @@
             <!-- Mise en forme page HTML -->
             <html>
                 <head>
-                    <title>Mon test XLS</title>
+                    <title>M2i - Fil rouge</title>
+
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                    <!-- Importer Bootstrap CSS -->
+                    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
                 </head>
                 <body>
 
@@ -26,7 +33,7 @@
                     <xsl:for-each select="presentation/axe_L/axe_M/axe_S">
 
                         <!-- VALUE-OF : sélectionner un élément de mon fichier XML pour l'afficher dans un HTML -->
-                        <p>Voici un contenu : 
+                        <p>
                             <xsl:value-of select="contenu" />
                         </p>
 

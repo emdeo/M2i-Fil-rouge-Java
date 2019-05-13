@@ -7,7 +7,8 @@
 
 <!-- Lien vers fichier XSL utilisé pour la mise en forme -->
 <!-- SANS CETTE LIGNE, LE FICHIER XML VA S'AFFICHER EN BRUT DANS LA PAGE WEB -->
-<?xml-stylesheet type="text/xsl" href="./presentationJava.xsl" ?>
+
+<!-- <?xml-stylesheet type="text/xsl" href="./presentationJava.xsl" ?> -->
 
 <presentation>
     <axe_L nom="Introduction" niveau="1">
@@ -95,36 +96,45 @@
                     byte, short, int, long
                 </contenu>
             </axe_S>
+
             <axe_S nom="Flottants" niveau="3">
                 <contenu>
                     float, double
                 </contenu>
             </axe_S>
+
             <axe_S nom="Caractères" niveau="3">
                 <contenu>
                     char
                 </contenu>
             </axe_S>
+
             <axe_S nom="Booléens" niveau="3">
                 <contenu>
                     boolean
                 </contenu>
             </axe_S>
+
         </axe_M>
 
         <axe_M nom="Opérateurs" niveau="2">
+
             <axe_S nom="Types" niveau="3">
                 <contenu>
                     Calcul, assignation, incrémentation, comparaison, logique
                 </contenu>
+            </axe_S>
+
             <axe_S nom="Priorité" niveau="3">
                 <contenu>
-                    <a href="./Java opérateurs_Priorités.PNG">
+                    (Consulter image)
                 </contenu>
             </axe_S>
+
         </axe_M>
 
         <axe_M nom="Structures_de_contrôle" niveau="2">
+
             <axe_S nom="Structures_itératives" niveau="3">
                 <contenu>
                     Itérations à travers des événements particuliers : while et do-while
@@ -133,6 +143,7 @@
                     Itérations à travers une liste : for et for-each
                 </contenu>
             </axe_S>
+
             <axe_S nom="Structures_conditionnelles" niveau="3">
                 <contenu>
                     Gérer des événements différents : if-else
@@ -141,19 +152,23 @@
                     Gérer les possibilités d'un même événement : switch
                 </contenu>
             </axe_S>
+
         </axe_M>
 
         <axe_M nom="Structures_de_données" niveau="2">
+
             <axe_S nom="Tableaux" niveau="3">
                 <contenu>
                     Groupe d'éléments de même type
                 </contenu>
             </axe_S>
+
             <axe_S nom="Chaînes_de_caractères" niveau="3">
                 <contenu>
                     String : objets immuables, concaténables, créés de manière non explicite
                 </contenu>
             </axe_S>
+
         </axe_M>
 
     </axe_L>
@@ -163,29 +178,17 @@
         <axe_M nom="Concepts_fondamentaux">
 
             <axe_S nom="Classes" niveau="2">
-                <!-- <axe_XS nom="librairies" niveau="3">
-                    <contenu>
-                        Packages et librairies : comment (et pourquoi) importer du code écrit par d'autres personnes
-                    </contenu>
-                </axe_XS>
-                <axe_XS nom="base" niveau="3">
-                    <contenu>
-                        Classes de base : Math, Random, JavaFX...
-                    </contenu>
-                </axe_XS>
-                <axe_XS nom="concepts" niveau="3">
-                    <contenu>
-                        Enumération, exceptions, modificateurs d'accès, constructeurs, encapsulation, héritage, polymorphisme, interfaces, classes abstraites, classes internes, transtypage, "this", instanciation, déclencheurs, threads, patrons de conception, concurrency...
-                    </contenu>
-                </axe_XS> -->
             </axe_S>
 
             <axe_S nom="Héritage" niveau="2">
             </axe_S>
+
             <axe_S nom="Classes_abstraites_et_interfaces" niveau="2">
             </axe_S>
+
             <axe_S nom="Structures_de_données_avancées" niveau="2">
             </axe_S>
+
             <axe_S nom="Exceptions" niveau="2">
             </axe_S>
 
@@ -195,98 +198,47 @@
 
             <axe_S nom="Gestion_des_fenêtres" niveau="2">
             </axe_S>
+
             <axe_S nom="Gestion_des_boutons" niveau="2">
             </axe_S>
 
         </axe_M>
+
     </axe_L>
     
     <axe_L nom="Ecosysteme" niveau="1">
     
         <axe_M nom="Frameworks" niveau="2">
-            <axe_S nom="Usages" niveau="3">
+            <axe_S nom="Applications_web" niveau="3">
                 <contenu>
-                    Infrastructure de développement : encadre la conception de programmes selon un patron de conception prédéfini
+                    JavaServer Faces, Google Web Toolkit, Apache Wicket, Spring Boot...
                 </contenu>
             </axe_S>
-            <axe_S nom="Populaires" niveau="3">
+
+            <axe_S nom="Test" niveau="3">
                 <contenu>
-                    Spring, Angular, JUnit, React...
+                    JUnit, EasyMock...
                 </contenu>
             </axe_S>
+
+            <axe_S nom="BDD" niveau="3">
+                <contenu>
+                    Hibernate, Hadoop, Spark...
+                </contenu>
+            </axe_S>
+
         </axe_M>
 
-        <!-- <axe_M nom="Plugins" niveau="2">
-            <axe_S nom="usages" niveau="3">
-                <contenu>
-                    Apporter de nouvelles fonctionnalités à un logiciel
-                </contenu>
-            </axe_S>
-            <axe_S nom="populaires" niveau="3">
-                <contenu>
-                    Eclipse : JPF, RCP...
-                </contenu>
-            </axe_S>
-        </axe_M>
+        <axe_M nom="Technologies_associées" niveau="2">
 
-        <axe_M nom="api" niveau="2">
-            <axe_S nom="usages" niveau="3">
-                <contenu>
-                    Gestion de services web : transactions, gestion de bases de données, contrats applicatifs (?), développement dynamique (HTML, XML...), data mining...
-                </contenu>
+            <axe_S nom="Widgets" niveau="3">
             </axe_S>
-            <axe_S nom="populaires" niveau="3">
-                <contenu>
-                    JDBC, JAX, Apache Tomcat...
-                </contenu>
+
+            <axe_S nom="API" niveau="3">
             </axe_S>
-        </axe_M> -->
+
+        </axe_M>
 
     </axe_L>
 
-    
 </presentation> 
-
-<!-- BROUILLONS -->
-<!--
-    <axe_S nom="exceptions" niveau="3">
-        <contenu>
-            Gérer des situations innatendues (exceptions et messages d'erreurs)
-        </contenu>
-    </axe_S>
-
-<axe_M>
-    <axe_S nom="commentaires" niveau="3">
-        <contenu>
-            Documenter et maintenir son code : // et /**/
-        </contenu>
-    </axe_S>
-</axe_M>
-
-
-<axe_M nom="fonctions" niveau="2">
-    <axe_S nom="creation" niveau="3">
-        <contenu>
-            Faire nos propres fonctions : notion d'algorithme, return et paramètres
-        </contenu>
-    </axe_S>
-    <axe_S nom="predefinies" niveau="3">
-        <contenu>
-            Méthodes importées avec Java : System, String...
-        </contenu>
-    </axe_S>
-</axe_M>
-
-<axe_M nom="deploiement" niveau="2">
-    <axe_S nom="debogage" niveau="3">
-        <contenu>
-            Détecter et corriger ses erreurs
-        </contenu>
-    </axe_S>
-    <axe_S nom="archivage" niveau="3">
-        <contenu>
-            Compresser et exporter son code
-        </contenu>
-    </axe_S>
-</axe_M>
--->
