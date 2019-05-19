@@ -2,6 +2,8 @@
 
 Projet fil rouge M2i : présentation sur le thème "Java : Langage et écosystème". Concevoir le plan avec un fichier XML (permet de créer des docs au format différents ayant le même contenu).
 
+**Pour un compte-rednu détaillé des concepts et outils de l'écosystème Java, consultez la <a href="https://github.com/emdeo/M2i-Fil-rouge-Java/wiki/Ecosyst%C3%A8me-Java">page wiki</a>**
+
 ## Table des matières
 
 1. [Références](#références)
